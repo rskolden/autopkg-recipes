@@ -13,7 +13,7 @@
 		<key>NAME</key>
 		<string>Skype For Business</string>
 		<key>SPARKLE_FEED_URL</key>
-		<string>https://rink.hockeyapp.net/api/2/apps/84908b9e48ad454984cd79091d09ee36</string>
+		<string>https://www.microsoft.com/en-us/download/confirmation.aspx?id=54108</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
