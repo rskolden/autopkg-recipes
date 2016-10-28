@@ -10,18 +10,27 @@
 	<dict>
 		<key>NAME</key>
 		<string>Skype For Business</string>
-		<key>pkg_url</key>
-		<string>https://www.microsoft.com/en-us/download/confirmation.aspx?id=54108</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>Process</key>
 	<array>
 		<dict>
+      <key>Processor</key>
+        <string>URLTextSearcher</string>
+        <key>Arguments</key>
+          <dict>
+            <key>url</key>
+            <string>https://www.microsoft.com/en-us/download/confirmation.aspx?id=54108</string>
+            <key>re_pattern</key>
+            <string>&lt;a href="(?P&lt;url&gt;https://.*/SkypeForBusinessInsatller.*\.pkg)"&gt;</string>
+          </dict>
+    </dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>url</key>
-				<string>%pkg_url%</string>
+				<key>filename</key>
+				<string>%NAME%.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
