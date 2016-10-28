@@ -16,16 +16,16 @@
 	<key>Process</key>
 	<array>
 		<dict>
-      <key>Processor</key>
-        <string>URLTextSearcher</string>
-        <key>Arguments</key>
-          <dict>
-            <key>url</key>
-            <string>https://www.microsoft.com/en-us/download/confirmation.aspx?id=54108</string>
-            <key>re_pattern</key>
-            <string>&lt;a href="(?P&lt;url&gt;https://.*/SkypeForBusinessInsatller.*\.pkg)"&gt;</string>
-          </dict>
-    </dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://go.microsoft.com/fwlink/?linkid=832978</string>
+                <key>re_pattern</key>
+                <string>(?P&lt;url&gt;https://download.microsoft.com/download/D/0/5/D055DA17-C7B8-4257-89A1-78E7BBE3833F/.*?/SkypeForBusinessInstaller.*?.pkg)</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
